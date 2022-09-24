@@ -1,0 +1,53 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="2dp"
+		android:padding="15dp"
+		android:id="@+id/item_layout"
+		app:cardCornerRadius="10sp"
+		app:cardElevation="8dp">
+	<View
+			android:layout_width="wrap_content"
+			android:layout_height="140dp"
+			android:background="@drawable/shapeitem1"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:id="@+id/view626"
+			app:layout_constraintTop_toTopOf="parent"/>
+	<TextView
+			android:text="@string/connect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtitem1"
+			android:textSize="30sp"
+			android:fontFamily="@font/fredoka_fonts"
+			android:textColor="@color/purple_700"
+			app:layout_constraintStart_toStartOf="@+id/view626"
+			app:layout_constraintTop_toTopOf="@+id/view626"
+			android:layout_marginTop="12dp"
+			android:layout_marginStart="20dp"/>
+	<TextView
+			android:text="@string/connect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtitem2"
+			android:textSize="20sp"
+			android:fontFamily="@font/fredoka_fonts"
+			android:textColor="@color/black"
+			app:layout_constraintStart_toStartOf="@+id/txtitem1" app:layout_constraintTop_toBottomOf="@+id/txtitem1"
+			app:layout_constraintBottom_toTopOf="@+id/txtitem3"/>
+	<TextView
+			android:text="@string/connect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtitem3"
+			android:fontFamily="@font/fredoka_fonts"
+			android:textSize="20sp"
+			android:textColor="@color/purple_700"
+			app:layout_constraintStart_toStartOf="@+id/txtitem2" app:layout_constraintBottom_toBottomOf="@+id/view626"
+			android:layout_marginBottom="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
